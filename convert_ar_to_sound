@@ -1,0 +1,17 @@
+# Convert Text to sound using given Arabic text
+from gtts import gTTS
+from playsound import playsound
+x='السلام هليكم ورحمة الله وبركاته'
+myvar=gTTS(text=x,lang="ar")
+myvar.save('myfile.mp3')
+playsound('myfile.mp3')
+
+"""
+# Convert Text to sound using input() method
+mytext=input('Enter your Text:')
+myjob=gTTS(text=mytext, lang="ar")
+#mytext=input('Enter your Text:')
+myjob.save('welcome.mp3')
+playsound('welcome.mp3')
+
+"""
